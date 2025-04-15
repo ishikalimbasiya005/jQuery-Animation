@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY</title>
+    <script src="../jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("div").animate({ left: '350px', width: '400px', height: '200px', opacity: 0.7 });
+                $("p").animate({ fontSize: '100px' });
+            });
+        });
+    </script>
+
+    <style>
+        div {
+            /* When you move the content into [LEFT , RIGHT, ] then , Position is required */
+            display: block;
+            background-color: rgb(227, 103, 103);
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+
+        button {
+            color: white;
+            background-color: rgb(237, 12, 12);
+            padding-left: 600px;
+            padding-right: 600px;
+        }
+
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is ANIMATION Event:-</h1>
+
+    <button>CLICK ME! </button>
+    <div>
+        <p>Hello</p>
+    </div>
+</body>
+
+</html>
